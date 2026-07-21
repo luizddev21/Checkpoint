@@ -8,6 +8,9 @@ node_modules/
 # Configurações locais da Netlify
 .netlify/
 
+# Imagem de logo
+./public/assets/logo.png
+
 # Logs
 *.log
 npm-debug.log*
