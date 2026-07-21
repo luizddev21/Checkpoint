@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Presença</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <img src="logo.png" alt="Logo">
+
+        <section id="checkinPage">
+            <h1>Faça o seu check-in</h1>
+
+            <div class="camp">
+                <label for="name">Digite o seu nome completo</label>
+                <input id="name" type="text" placeholder="Digite o seu nome">
+            </div>
+
+            <div class="camp">
+                <button type="button" class="check-in-button">Fazer check-in!</button>
+            </div>
+
+            <div class="camp alert">
+                <p>Ao pressionar <strong>fazer check-in</strong>, o ID do seu dispositivo será registrado. Em caso de duplicidade de nomes, a presença poderá ser cancelada.</p>
+            </div>
+        </section>
+
+        <section id="confirmPage" hidden>
+            <h1>Ainda está no evento?</h1>
+
+            <div class="camp">
+                <button type="button" class="confirm-button">Sim!</button>
+            </div>
+        </section>
+
+        <section id="checkoutPage" hidden>
+            <h1>Faça o seu check-out</h1>
+
+            <div class="camp">
+                <button type="button" class="check-out-button">Fazer check-out!</button>
+            </div>
+        </section>
+
+        <section id="successPage" hidden>
+            <h1>Operação concluída!</h1>
+            <ion-icon name="checkmark-circle"></ion-icon>
+        </section>
+
+        <div class="camp error hidden">
+            <p>Erro</p>
+        </div>
+    </form>
+
+    <script type="module" src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
