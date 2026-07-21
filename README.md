@@ -59,6 +59,7 @@ netlify dev
 ```javascript
 const URL = "https://SEU_SITE.netlify.app/.netlify/functions/getRecords";
 const ADMIN_KEY = "SUA_ADMIN_KEY";
+´´´
 
 ## Estrutura
 
