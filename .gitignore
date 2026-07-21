@@ -9,7 +9,7 @@ node_modules/
 .netlify/
 
 # Imagem de logo
-./public/assets/logo.png
+public/assets/logo.png
 
 # Logs
 *.log
